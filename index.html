@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bulk Upload Statistic</title>
+    <title>SSO</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,11 +12,33 @@
 </head>
 <body>
 <div class="container">
+    <div class="access-tokens">
+        <div>
+            <span>ID Token: </span>
+            <a id="idToken">SSO LR - Check JWT token details</a>
+        </div>
+    </div>
+
+    <div>
+        <p id="userName"></p>
+    </div>
+    <div class="products">
+        <div>
+            <a>LR product 1</a>
+        </div>
+        <div>
+            <a>LR product 2</a>
+        </div>
+        <div>
+            <a>LR product 3</a>
+        </div>
+    </div>
+
     <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body text-center">
-                    <button id="authenticate" type="button" class="btn btn-primary">Authenticate via SAML</button>
+                    <button id="authenticate" type="button" class="btn btn-primary">Authenticate</button>
                 </div>
             </div>
         </div>
